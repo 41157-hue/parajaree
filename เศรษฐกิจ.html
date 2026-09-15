@@ -1,245 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ไปเที่ยวชลบุรีกันไหมๆๆ 🌊</title>
-
-```
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        font-family: Tahoma, Arial, sans-serif;
-        background: linear-gradient(135deg, #e0f7fa, #ffffff);
-        color: #333;
-    }
-
-    header {
-        background: linear-gradient(135deg, #0077b6, #00b4d8);
-        color: white;
-        text-align: center;
-        padding: 25px 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 42px;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    .hero {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 30px auto;
-    }
-
-    .intro {
-        background: white;
-        padding: 25px;
-        border-radius: 15px;
-        text-align: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
-    }
-
-    .intro h2 {
-        color: #0077b6;
-    }
-
-    .intro p {
-        font-size: 18px;
-        line-height: 1.8;
-    }
-
-    .button {
-        display: inline-block;
-        background: #0077b6;
-        color: white;
-        text-decoration: none;
-        padding: 12px 25px;
-        border-radius: 25px;
-        margin-top: 10px;
-    }
-
-    .button:hover {
-        background: #023e8a;
-    }
-
-    .table-box {
-        background: white;
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        overflow-x: auto;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        table-layout: fixed;
-    }
-
-    th {
-        background: #0077b6;
-        color: white;
-        padding: 15px 8px;
-    }
-
-    td {
-        border: 1px solid #ddd;
-        padding: 15px 8px;
-        text-align: center;
-        word-wrap: break-word;
-        background: #f8fdff;
-    }
-
-    tr:hover td {
-        background: #caf0f8;
-    }
-
-    footer {
-        margin-top: 40px;
-        background: #023e8a;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-
-    @media (max-width: 768px) {
-        header h1 {
-            font-size: 28px;
-        }
-
-        .hero {
-            height: 250px;
-        }
-
-        .container {
-            width: 95%;
-        }
-    }
-</style>
-```
-
+    <title>เศรษฐกิจจังหวัดชลบุรี</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root { --ink: #24323b; --muted: #52636b; --paper: #fffdf8; --teal: #0d6870; --gold: #d98b32; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: linear-gradient(135deg, #f8f1df, #e2f1ef); font-family: Tahoma, sans-serif; line-height: 1.8; }
+        header { padding: 48px 20px 42px; color: white; text-align: center; background: linear-gradient(120deg, var(--teal), #2a9a96); }
+        header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); }
+        header p { max-width: 760px; margin: 12px auto 0; color: #e6f5f1; }
+        .hero { display: block; width: 100%; height: min(42vw, 420px); min-height: 220px; object-fit: cover; }
+        main { width: min(1100px, calc(100% - 32px)); margin: 32px auto 60px; }
+        .intro { margin-bottom: 28px; padding: 28px clamp(22px, 4vw, 44px); text-align: center; background: var(--paper); border-left: 6px solid var(--gold); border-radius: 8px; box-shadow: 0 12px 30px rgba(36, 50, 59, .08); }
+        .intro h2 { margin-top: 0; color: var(--teal); }
+        .intro p { margin-bottom: 0; color: var(--muted); }
+        .actions { margin-top: 20px; }
+        .button { display: inline-block; margin: 5px 6px; padding: 9px 18px; color: white; text-decoration: none; background: var(--teal); border-radius: 4px; }
+        .button:hover { background: #084c52; }
+        .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+        article { overflow: hidden; background: var(--paper); border: 1px solid rgba(13, 104, 112, .14); border-radius: 8px; box-shadow: 0 10px 26px rgba(36, 50, 59, .08); }
+        article img { display: block; width: 100%; height: 230px; object-fit: cover; }
+        article .content { padding: 22px 24px 26px; }
+        article h2 { margin: 0 0 12px; color: var(--teal); font-size: 1.35rem; line-height: 1.4; }
+        article p { margin: 0 0 12px; }
+        ul { margin: 0; padding-left: 1.3em; }
+        li { margin-bottom: 6px; }
+        footer { padding: 26px 20px; color: white; text-align: center; background: #244d50; }
+        footer p { margin: 4px 0; }
+        @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } article img { height: 220px; } }
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav class="navbar"><a class="brand" href="index.html">CHONBURI / ชลบุรี</a><div class="nav-links"><a href="index.html">หน้าหลัก</a><a href="สถาน.html">เที่ยว</a><a href="อาหาร.html">กิน</a><a href="โรงแรม.html">พัก</a></div></nav>
+        <h1>เศรษฐกิจจังหวัดชลบุรี</h1>
+        <p>ศูนย์กลางอุตสาหกรรม การท่องเที่ยว โลจิสติกส์ และการค้าสำคัญของภาคตะวันออก</p>
+    </header>
 
-```
-<header>
-    <h1><marquee>🌊 ไปเที่ยวชลบุรีกันไหมๆๆๆ 🌴</marquee></h1>
-</header>
+    <img class="hero" src="img/ชล.png" alt="ภาพจังหวัดชลบุรี">
 
-<img src="D:\น้องเช้คค\ชล.PNG"
-     alt="รูปสถานที่ท่องเที่ยวจังหวัดชลบุรี"
-     class="hero">
+    <main>
+        <section class="intro">
+            <h2>โครงสร้างเศรษฐกิจที่ขับเคลื่อนชลบุรี</h2>
+            <p>จังหวัดชลบุรีมีเศรษฐกิจหลักขับเคลื่อนด้วยอุตสาหกรรมการผลิต นิคมอุตสาหกรรมขนาดใหญ่ และการท่องเที่ยวระดับนานาชาติ อีกทั้งยังเป็นศูนย์กลางโลจิสติกส์และท่าเรือน้ำลึกหลักของประเทศ ภายใต้เขตพัฒนาพิเศษภาคตะวันออก (EEC)</p>
+            <div class="actions">
+                <a class="button" href="index.html">กลับหน้าหลัก</a>
+                <a class="button" href="https://www.chonburi.go.th/frontpage" target="_blank" rel="noopener">เว็บไซต์ทางการจังหวัดชลบุรี</a>
+            </div>
+        </section>
 
-<div class="container">
+        <section class="grid">
+            <article>
+                <img src="img/f1.jpg" alt="ภาคอุตสาหกรรมและนิคมอุตสาหกรรมจังหวัดชลบุรี">
+                <div class="content">
+                    <h2>ภาคอุตสาหกรรมและนิคมอุตสาหกรรม</h2>
+                    <ul>
+                        <li>มีนิคมอุตสาหกรรมสำคัญ เช่น อมตะซิตี้ ชลบุรี และปิ่นทอง</li>
+                        <li>โดดเด่นด้านการผลิตรถยนต์ ชิ้นส่วนอิเล็กทรอนิกส์ และปิโตรเคมี</li>
+                        <li>เป็นฐานการลงทุนขนาดใหญ่จากต่างประเทศ</li>
+                    </ul>
+                </div>
+            </article>
 
-    <div class="intro">
-        <h2>🌴 ยินดีต้อนรับสู่จังหวัดชลบุรี 🌊</h2>
+            <article>
+                <img src="img/f2.jpg" alt="การขนส่งและโลจิสติกส์จังหวัดชลบุรี">
+                <div class="content">
+                    <h2>การขนส่งและโลจิสติกส์</h2>
+                    <ul>
+                        <li>มีท่าเรือแหลมฉบัง เป็นท่าเรือน้ำลึกที่ใหญ่ที่สุดในไทยสำหรับการส่งออกสินค้า</li>
+                        <li>เชื่อมต่อเส้นทางคมนาคมหลัก เช่น มอเตอร์เวย์สาย 7 และท่าอากาศยาน</li>
+                    </ul>
+                </div>
+            </article>
 
-        <p>
-            ชลบุรีเป็นจังหวัดท่องเที่ยวสำคัญของประเทศไทย
-            มีทั้งทะเล ชายหาด อาหารทะเล และสถานที่ท่องเที่ยวมากมาย
-            โดยเฉพาะเมืองพัทยาที่ได้รับความนิยมจากนักท่องเที่ยว
-        </p>
+            <article>
+                <img src="img/f3.jpg" alt="การท่องเที่ยวและบริการเมืองพัทยาและบางแสน">
+                <div class="content">
+                    <h2>การท่องเที่ยวและบริการเมืองพัทยาและบางแสน</h2>
+                    <ul>
+                        <li>สร้างรายได้หลักจากนักท่องเที่ยวทั้งชาวไทยและชาวต่างชาติ</li>
+                        <li>ธุรกิจโรงแรม ร้านอาหาร และศูนย์การค้าเติบโตสูง</li>
+                    </ul>
+                </div>
+            </article>
 
-        <a href="D:\น้องเช้คค\work3_parajaree_27.html"
-           class="button">
-            🏠 กลับไปหน้าหลัก
-        </a>
+            <article>
+                <img src="img/f4.jpg" alt="ภาคเกษตรกรรมและพาณิชยกรรมจังหวัดชลบุรี">
+                <div class="content">
+                    <h2>ภาคเกษตรกรรมและพาณิชยกรรม</h2>
+                    <ul>
+                        <li>ปลูกพืชเศรษฐกิจ เช่น มันสำปะหลัง อ้อย และยางพารา</li>
+                        <li>ตลาดค้าส่ง ค้าปลีก และธุรกิจอสังหาริมทรัพย์ขยายตัวตามชุมชน</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
 
-        <br>
-
-        <a href="https://www.chonburi.go.th/frontpage"
-           class="button"
-           target="_blank">
-            🌐 เว็บไซต์ทางการจังหวัดชลบุรี
-        </a>
-    </div>
-
-    <div class="table-box">
-
-        <h2 style="text-align:center; color:#0077b6;">
-            📌 ข้อมูลน่าสนใจของจังหวัดชลบุรี
-        </h2>
-
-        <table>
-            <tr>
-                <th>🏝️ สถานที่ท่องเที่ยว</th>
-                <th>🍤 อาหารเด่นเมืองชล</th>
-                <th>🎉 ประเพณีวัฒนธรรม</th>
-                <th>📜 คำขวัญ</th>
-                <th>🌃 พัทยา</th>
-                <th>💰 เศรษฐกิจสำคัญ</th>
-                <th>👥 จำนวนนักท่องเที่ยว</th>
-                <th>🌊 ทะเลและชายหาด</th>
-            </tr>
-
-            <tr>
-                <td>เกาะล้าน<br>หาดบางแสน<br>เขาสามมุข</td>
-
-                <td>อาหารทะเล<br>ข้าวหลามหนองมน<br>ขนมจาก</td>
-
-                <td>ประเพณีวิ่งควาย<br>สงกรานต์<br>งานบุญต่าง ๆ</td>
-
-                <td>
-                    ทะเลงาม<br>
-                    ข้าวหลามอร่อย<br>
-                    อ้อยหวาน<br>
-                    จักสานดี<br>
-                    ประเพณีวิ่งควาย
-                </td>
-
-                <td>
-                    เมืองท่องเที่ยวชื่อดัง<br>
-                    ชายหาดสวย<br>
-                    แหล่งบันเทิง
-                </td>
-
-                <td>
-                    การท่องเที่ยว<br>
-                    อุตสาหกรรม<br>
-                    การค้าและบริการ
-                </td>
-
-                <td>
-                    มีนักท่องเที่ยว<br>
-                    เดินทางมาเป็นจำนวนมาก<br>
-                    ในแต่ละปี
-                </td>
-
-                <td>
-                    หาดบางแสน<br>
-                    หาดจอมเทียน<br>
-                    เกาะล้าน
-                </td>
-            </tr>
-
-        </table>
-    </div>
-
-</div>
-
-<footer>
-    <p>🌴 จังหวัดชลบุรี 🌊</p>
-    <p>เว็บไซต์แนะนำสถานที่ท่องเที่ยวและข้อมูลน่าสนใจ</p>
-</footer>
-```
-
+    <footer>
+        <p>จังหวัดชลบุรี</p>
+        <p>เศรษฐกิจหลากหลาย เชื่อมโยงโอกาสของภาคตะวันออก</p>
+    </footer>
 </body>
 </html>

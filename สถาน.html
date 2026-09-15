@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-	<title>ไปเที่ยวกันไหมๆๆๆๆๆ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>สถานที่ท่องเที่ยวจังหวัดชลบุรี</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		:root { --ink: #23343b; --muted: #54666d; --paper: #fffdf8; --teal: #126b70; --coral: #d76f45; }
+		* { box-sizing: border-box; }
+		body { margin: 0; color: var(--ink); background: linear-gradient(135deg, #f8f0de, #e0f1ee); font-family: Tahoma, sans-serif; line-height: 1.8; }
+		header { padding: 52px 20px 44px; color: white; text-align: center; background: linear-gradient(120deg, #126b70, #29968f); }
+		header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.4rem); }
+		header p { max-width: 720px; margin: 12px auto 0; color: #e4f4f0; }
+		main { width: min(1120px, calc(100% - 32px)); margin: 34px auto 60px; }
+		.intro { margin-bottom: 28px; padding: 24px clamp(20px, 4vw, 40px); text-align: center; background: var(--paper); border-left: 6px solid var(--coral); border-radius: 8px; box-shadow: 0 12px 28px rgba(35, 52, 59, .08); }
+		.intro p { margin: 0; color: var(--muted); }
+		.places { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+		article { overflow: hidden; background: var(--paper); border: 1px solid rgba(18, 107, 112, .14); border-radius: 8px; box-shadow: 0 10px 24px rgba(35, 52, 59, .08); }
+		article:last-child { grid-column: 1 / -1; }
+		article img { display: block; width: 100%; height: 250px; object-fit: cover; }
+		.content { padding: 22px 24px 28px; }
+		h2 { margin: 0 0 14px; color: var(--teal); font-size: clamp(1.3rem, 2.5vw, 1.7rem); line-height: 1.4; }
+		p { margin: 0 0 14px; }
+		.details { margin: 0 0 18px; padding: 0; list-style: none; color: var(--muted); }
+		.details li { margin-bottom: 5px; }
+		.details strong { color: var(--ink); }
+		.map, .site { display: inline-block; margin: 4px 6px 0 0; padding: 8px 14px; color: white; text-decoration: none; background: var(--teal); border-radius: 4px; }
+		.map:hover, .site:hover { background: #0b5054; }
+		footer { padding: 25px 20px; color: white; text-align: center; background: #244d50; }
+		footer p { margin: 4px 0; }
+		@media (max-width: 760px) { .places { grid-template-columns: 1fr; } article:last-child { grid-column: auto; } article img { height: 220px; } }
+	</style>
 </head>
 <body>
-
-	<p><img src ="D:\น้องเช้คค\ชล.PNG" ait="รูปโปรไฟล์""align="center"width="1920"heigt="500"></p>
-	<h1>30 ที่เที่ยวชลบุรี ธรรมชาติ ในเมือง มีครบ เที่ยวอย่างเพลิน </h1>
-	
-	
-	<p><A HREF="D:\น้องเช้คค\work3_parajaree_27.html">
-	<p><A HREF="https://www.chonburi.go.th/frontpage">เว็บไซต์ทางการชลบุรี</A>
-
-<style>
-table {
-width: 100%; /* กำหนดให้ตารางเต็มความกว้าง */
-table-layout: fixed; /* บังคับให้เฉลี่ยความกว้างคอลัมน์เท่ากันทุกช่อง */
-border-collapse: collapse;
-}
-
-th, td {
-border: 1px solid #ccc;
-padding: 8px;
-text-align: center;
-word-wrap: break-word; /* ถ้าข้อความยาวเกินช่อง ให้ตัดคำลงบรรทัดใหม่ */
-}
-</style>
-
-<TABLE border="1"width=100%" height="100">
-   <TR>
-   <TD align="center">สถานที่ท่องเที่ยว</TD>
-   <TD align="center">อาหารเด่นเมืองชล</TD>
-   <TD align="center">ประเพณีวัฒนธรรม</TD>
-      <TD align="center">คำขวัญ</TD>
-      <TD align="center">พัทยา</TD>
-      <TD align="center">เศรษฐกิจสำคัญ</TD>
-      <TD align="center">จำนวนนักท่องเที่ยว</TD>
-      <TD align="center">ช่องที่4</TD>
- </TR>
-  
-</TABLE>
-
+	<header>
+		<nav class="navbar"><a class="brand" href="index.html">CHONBURI / ชลบุรี</a><div class="nav-links"><a href="index.html">หน้าหลัก</a><a href="อาหาร.html">กิน</a><a href="โรงแรม.html">พัก</a><a href="ประเพณี.html">วัฒนธรรม</a></div></nav>
+		<h1>สถานที่ท่องเที่ยวจังหวัดชลบุรี</h1>
+		<p>สัมผัสทะเล ธรรมชาติ สัตว์ป่า และสถาปัตยกรรมอันงดงามในจังหวัดชลบุรี</p>
+	</header>
+	<main>
+		<section class="intro"><p>รวมสถานที่ท่องเที่ยวหลากหลายรูปแบบ เหมาะทั้งสำหรับการพักผ่อนกับครอบครัว การผจญภัย และการเดินทางไปชมความงดงามของธรรมชาติและศิลปวัฒนธรรม</p></section>
+		<section class="places">
+			<article>
+				<img src="img/g1.jpg" alt="เกาะขาม จังหวัดชลบุรี">
+				<div class="content">
+					<h2>1. เกาะขาม</h2>
+					<p>แวะไปพักใจที่เกาะน้ำใส ล้อมรอบไปด้วยธรรมชาติที่อุดมสมบูรณ์ เกาะขามเป็นอีกหนึ่งที่เที่ยวฮิตของชลบุรี สามารถมาเที่ยวแบบไป-กลับได้เท่านั้น เพราะไม่มีที่พักบนเกาะ แต่เพียงวันเดียวก็สนุกกับกิจกรรมได้เต็มที่ ไม่ว่าจะเป็นดำน้ำตื้นชมปะการัง พายเรือคายัค หรือนั่งชิลฟังเสียงคลื่น ก็ช่วยชาร์จพลังได้เป็นอย่างดี</p>
+					<ul class="details"><li><strong>ที่อยู่:</strong> ตำบลแสมสาร อำเภอสัตหีบ จังหวัดชลบุรี</li></ul>
+					<a class="map" href="https://maps.app.goo.gl/F1Jjo3yjoeJNwt6X9" target="_blank" rel="noopener">ดูแผนที่ Google Maps</a>
+				</div>
+			</article>
+			<article>
+				<img src="img/g2.jpg" alt="ศิริพาร์ค แอนด์ ซู">
+				<div class="content">
+					<h2>2. ศิริพาร์ค แอนด์ ซู (Siri Park and Zoo by Sriracha Zoo)</h2>
+					<p>อีกหนึ่งที่เที่ยวชลบุรีที่เหมาะกับการพาเด็ก ๆ มาเที่ยว เป็นสวนสัตว์ที่เต็มไปด้วยกิจกรรมสนุกสำหรับครอบครัว เช่น ให้อาหารปลา ให้อาหารจระเข้ ขี่ม้า และถ่ายรูปกับลูกสิงโตน่ารัก</p>
+					<ul class="details"><li><strong>ค่าเข้าชม:</strong> ผู้ใหญ่ 100 บาท เด็กส่วนสูงน้อยกว่า 140 ซม. เข้าฟรี</li><li><strong>ที่อยู่:</strong> 341/1 ตำบลหนองขาม อำเภอศรีราชา จังหวัดชลบุรี</li><li><strong>โทรศัพท์:</strong> 098-2576895</li><li><strong>เวลาทำการ:</strong> 09.00-17.00 น.</li></ul>
+					<a class="map" href="https://maps.app.goo.gl/4RAyp7rGcXC4CjFA9" target="_blank" rel="noopener">ดูแผนที่ Google Maps</a>
+				</div>
+			</article>
+			<article>
+				<img src="img/g3.jpg" alt="น้ำตกชันตาเถร">
+				<div class="content">
+					<h2>3. น้ำตกชันตาเถร (Chan Ta Then Waterfall)</h2>
+					<p>ชลบุรีไม่ได้มีแค่ทะเล แต่ยังมีน้ำตกสวย ๆ ท่ามกลางป่าที่อุดมสมบูรณ์ น้ำตกแห่งนี้มีทั้งหมด 5 ชั้น และชั้นที่ 4 ขึ้นชื่อว่าสวยที่สุด ระหว่างทางอาจพบนกเงือกที่หาดูได้ยาก แนะนำให้มาเที่ยวช่วงหน้าฝน เพราะน้ำตกจะสวยเป็นพิเศษ</p>
+					<ul class="details"><li><strong>ค่าเข้าชม:</strong> ผู้ใหญ่ 20 บาท เด็ก 10 บาท</li><li><strong>ที่อยู่:</strong> ตำบลบางพระ อำเภอศรีราชา จังหวัดชลบุรี</li><li><strong>โทรศัพท์:</strong> 081-5860188</li><li><strong>เวลาทำการ:</strong> 08.00-16.00 น.</li></ul>
+					<a class="map" href="https://maps.app.goo.gl/d3YdTEXTjLgcRgVa6" target="_blank" rel="noopener">ดูแผนที่ Google Maps</a>
+				</div>
+			</article>
+			<article>
+				<img src="img/g4.jpg" alt="แกรนด์แคนยอนชลบุรี">
+				<div class="content">
+					<h2>4. แกรนด์แคนยอน ชลบุรี (Grand Canyon)</h2>
+					<p>ที่เที่ยวชลบุรีที่เข้าฟรีและเหมาะกับการถ่ายรูป เกิดจากภูเขาหินปูนขนาดใหญ่ถูกกัดกร่อนจนกลายเป็นหน้าผาและร่องลึกสลับซับซ้อนคล้ายแคนยอน พร้อมน้ำสีเขียวมรกตจากแร่ธาตุต่าง ๆ แนะนำให้มาช่วงเช้าหรือช่วงบ่ายถึงเย็นเพื่อหลีกเลี่ยงแดดกลางวัน</p>
+					<ul class="details"><li><strong>ที่อยู่:</strong> คีรี ซอยคีรีนคร 8/1 ตำบลห้วยกะปิ อำเภอเมืองชลบุรี จังหวัดชลบุรี</li></ul>
+					<a class="map" href="https://maps.app.goo.gl/kRoiyoi54efhV1N86" target="_blank" rel="noopener">ดูแผนที่ Google Maps</a>
+				</div>
+			</article>
+			<article>
+				<img src="img/g5.jpg" alt="ปราสาทสัจธรรม">
+				<div class="content">
+					<h2>5. ปราสาทสัจธรรม</h2>
+					<p>สถานที่ท่องเที่ยวชื่อดังของชลบุรีกับงานสถาปัตยกรรมไทยอันวิจิตรระดับโลก เป็นปราสาทไม้แกะสลักที่มีขนาดใหญ่ที่สุดในโลก จุดเด่นคือไม่ใช้ตะปูหรือโลหะในการก่อสร้าง ภายในเต็มไปด้วยงานจิตรกรรมและสถาปัตยกรรมจากฝีมือช่างไทย อีกทั้งยังตั้งอยู่ริมอ่าววงพระจันทร์ จึงมองเห็นวิวทะเลได้ด้วย</p>
+					<ul class="details"><li><strong>ที่อยู่:</strong> 206/2 หมู่ 5 แหลมราชเวช อ่าววงพระจันทร์ ตำบลนาเกลือ อำเภอบางละมุง จังหวัดชลบุรี</li><li><strong>โทรศัพท์:</strong> 081-3508708</li><li><strong>เวลาทำการ:</strong> 08.00-20.30 น.</li></ul>
+					<a class="map" href="https://maps.app.goo.gl/Y2P7p5kGDgkkbyAQ8" target="_blank" rel="noopener">ดูแผนที่ Google Maps</a>
+					<a class="site" href="https://www.facebook.com/sanctuaryoftruthmuseum/" target="_blank" rel="noopener">เว็บไซต์สถานที่</a>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer><p>สถานที่ท่องเที่ยวจังหวัดชลบุรี</p><p>ทะเล ธรรมชาติ และวัฒนธรรมในจังหวัดเดียว</p></footer>
 </body>
 </html>

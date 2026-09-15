@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-	<title>ไปเที่ยวกันไหมๆๆๆๆๆ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ชลบุรี | ไปเที่ยวกันไหม</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header home-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">CHONBURI / ชลบุรี</a>
+      <div class="nav-links">
+        <a href="สถาน.html">เที่ยว</a><a href="อาหาร.html">กิน</a><a href="โรงแรม.html">พัก</a><a href="ประเพณี.html">วัฒนธรรม</a><a href="เศรษฐกิจ.html">เศรษฐกิจ</a>
+      </div>
+    </nav>
+  </header>
+  <img class="home-image" src="img/ชล.png" width="1920" height="500" alt="ภาพจังหวัดชลบุรี">
 
-	<h1><marquee>ชลบุรี</marquee></h1>
-	<hr>
-	<p><img src ="https://41157-hue.github.io/parajaree/img/ชล.png" ait="รูปโปรไฟล์"width="1920"heigt="500"></p>
-	<p><A HREF="D:\น้องเช้คค\work3_parajaree_27.html">
-	<p><A HREF="https://www.chonburi.go.th/frontpage">เว็บไซต์ทางการชลบุรี</A>
+  <main class="shell">
+    <section class="intro reveal">
+      <h2>เมืองเดียว เที่ยวได้หลายอารมณ์</h2>
+      <p>จากหาดบางแสนถึงพัทยา จากของฝากหนองมนถึงนิคมอุตสาหกรรม ชลบุรีคือจังหวัดที่มีทั้งความสนุก ความอร่อย และเรื่องราวให้ค้นพบในทุกระยะทาง</p>
+      <a class="button" href="https://www.chonburi.go.th/frontpage" target="_blank" rel="noopener">เว็บไซต์ทางการชลบุรี</a>
+    </section>
 
-<style>
-table {
-width: 100%; /* กำหนดให้ตารางเต็มความกว้าง */
-table-layout: fixed; /* บังคับให้เฉลี่ยความกว้างคอลัมน์เท่ากันทุกช่อง */
-border-collapse: collapse;
-}
+    <section class="credits reveal" aria-label="รายชื่อผู้จัดทำ">
+      <h2 class="credits-title">ทีมผู้จัดทำ</h2>
+      <div class="credit"><strong>น.ส.กรกวี มะลิวัลย์</strong><span>เลขที่ 19</span></div>
+      <div class="credit"><strong>น.ส.เทวิกา โสดดี</strong><span>เลขที่ 24</span></div>
+      <div class="credit"><strong>น.ส.ปารจรีย์ ใจรื่น</strong><span>เลขที่ 27</span></div>
+    </section>
 
-th, td {
-border: 1px solid #ccc;
-padding: 8px;
-text-align: center;
-word-wrap: break-word; /* ถ้าข้อความยาวเกินช่อง ให้ตัดคำลงบรรทัดใหม่ */
-}
-</style>
-
-<TABLE border="1"width=100%" height="100">
-   <TR>
-   <TD align="center"><A HREF="A1.html"></A>สถานที่ท่องเที่ยว</TD>
-   <TD align="center">อาหารเด่นเมืองชล</TD>
-   <TD align="center">ประเพณีวัฒนธรรม</TD>
-      <TD align="center">คำขวัญ</TD>
-      <TD align="center">พัทยา</TD>
-      <TD align="center">เศรษฐกิจสำคัญ</TD>
-      <TD align="center">จำนวนนักท่องเที่ยว</TD>
-      <TD align="center">พัทยา</TD>
- </TR>
-  
-</TABLE>
-
+    <section class="grid">
+      <a class="card reveal" href="สถาน.html"><img src="img/g1.jpg" alt="เกาะขาม"><div class="card-body"><span class="tag">GO / ออกไป</span><h2>สถานที่ท่องเที่ยว</h2><p>เกาะ น้ำตก สวนสัตว์ และมุมถ่ายรูปที่ทำให้วันหยุดมีสีสัน</p></div></a>
+      <a class="card reveal" href="อาหาร.html"><img src="img/b1.jpg" alt="ข้าวหลามหนองมน"><div class="card-body"><span class="tag">TASTE / ลองชิม</span><h2>อาหารเด่นเมืองชล</h2><p>ของฝากและรสชาติท้องถิ่นที่พกความทรงจำกลับบ้านได้</p></div></a>
+      <a class="card reveal" href="ประเพณี.html"><img src="img/e1.jpg" alt="ประเพณีวันไหล"><div class="card-body"><span class="tag">ROOTS / รากของเรา</span><h2>ประเพณีวัฒนธรรม</h2><p>เทศกาล งานบุญ และภูมิปัญญาที่ทำให้ชลบุรีมีชีวิต</p></div></a>
+      <a class="card reveal" href="พัทยา.html"><img src="img/d2.jpg" alt="ชายหาดพัทยา"><div class="card-body"><span class="tag">CITY / เมืองริมทะเล</span><h2>พัทยา</h2><p>เมืองชายทะเลที่มีทั้งประวัติศาสตร์ วิวทะเล และสีสันไม่เคยหลับ</p></div></a>
+      <a class="card reveal" href="โรงแรม.html"><img src="img/c1.jpg" alt="โรงแรมในชลบุรี"><div class="card-body"><span class="tag">STAY / พักผ่อน</span><h2>โรงแรม</h2><p>เลือกที่พักให้เข้ากับจังหวะการเดินทางของคุณ</p></div></a>
+      <a class="card reveal" href="เศรษฐกิจ.html"><img src="img/f2.jpg" alt="โลจิสติกส์ชลบุรี"><div class="card-body"><span class="tag">MOVE / ขับเคลื่อน</span><h2>เศรษฐกิจสำคัญ</h2><p>มองชลบุรีผ่านอุตสาหกรรม โลจิสติกส์ และโอกาสใหม่</p></div></a>
+      <a class="card reveal" href="A1.html"><img src="img/a1.jpg" alt="ข้อมูลนักท่องเที่ยว"><div class="card-body"><span class="tag">INSIGHT / มองให้ลึก</span><h2>จำนวนนักท่องเที่ยว</h2><p>ตัวเลขและภาพรวมการเดินทางที่สะท้อนเสน่ห์ของเมืองชล</p></div></a>
+    </section>
+  </main>
+  <footer class="footer"><p>ชลบุรี / CHONBURI</p><p>ทะเลใกล้ใจ เรื่องราวใกล้ตัว</p></footer>
 </body>
 </html>
